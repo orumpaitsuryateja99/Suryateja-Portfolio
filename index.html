@@ -517,6 +517,49 @@
             font-weight: 600;
         }
 
+        /* Projects */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .project-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 2rem;
+            transition: all 0.2s;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .project-card:hover {
+            box-shadow: var(--shadow-md);
+            border-color: var(--accent-light);
+            transform: translateY(-4px);
+        }
+
+        .project-header {
+            margin-bottom: 1rem;
+        }
+
+        .project-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: var(--text-primary);
+        }
+
+        .project-description {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+            flex-grow: 1;
+        }
+
         /* Skills */
         .skills-section {
             background: var(--bg-secondary);
@@ -753,6 +796,7 @@
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -932,6 +976,58 @@
                         <li>Integrated <strong>Google Calendar API</strong> into the booking workflow, replacing manual scheduling coordination with real-time class booking through external web services and handling user authorization</li>
                         <li>Collaborated with the design team to ship production-ready UI components aligned with brand requirements, delivering the full interface on schedule for public release</li>
                     </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">// projects</div>
+                <h2 class="section-title">Things I've Built</h2>
+            </div>
+            <div class="projects-grid">
+                <!-- ClimateAI -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">Climate Data Chatbot</h3>
+                    </div>
+                    <div class="project-description">
+                        A full-stack climate application routing natural-language queries across 4 government APIs (NASA Daymet, NOAA, OpenWeather, GeoNames). Features a Python/Flask backend and analytical panels for reproducible analysis.
+                    </div>
+                    <div class="exp-tags" style="margin-bottom: 1.5rem;">
+                        <span class="tag tag-highlight">Python</span>
+                        <span class="tag tag-highlight">Flask</span>
+                        <span class="tag">REST APIs</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                    <div>
+                        <a href="https://climate-data-chatbot.onrender.com/" target="_blank" style="display: inline-flex; align-items: center; gap: 0.5rem; color: var(--accent-primary); font-weight: 600; font-size: 0.9rem; text-decoration: none;">
+                            View Live App →
+                        </a>
+                    </div>
+                </div>
+
+                <!-- VIVAFIT -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">FitLife Studio Scheduler</h3>
+                    </div>
+                    <div class="project-description">
+                        A responsive multi-page class scheduling web application that consolidates the weekly class catalog. Integrated with Google Calendar API to replace manual scheduling with a real-time booking workflow.
+                    </div>
+                    <div class="exp-tags" style="margin-bottom: 1.5rem;">
+                        <span class="tag tag-highlight">HTML/CSS/JS</span>
+                        <span class="tag">Google Calendar API</span>
+                        <span class="tag">OAuth</span>
+                    </div>
+                    <div>
+                        <a href="https://orumpaitsuryateja99.github.io/fitlife-studio/" target="_blank" style="display: inline-flex; align-items: center; gap: 0.5rem; color: var(--accent-primary); font-weight: 600; font-size: 0.9rem; text-decoration: none;">
+                            View Live Project →
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
