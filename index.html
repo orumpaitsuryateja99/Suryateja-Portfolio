@@ -1025,19 +1025,20 @@
                         <h3 class="project-title">JobMatch Engine</h3>
                     </div>
                     <div class="project-description">
-                        Java full-stack job-search & ATS-scoring platform — a Spring Boot REST backend with a Next.js/React frontend. Concurrently ingests jobs across sponsor ATS boards (Greenhouse, Lever, Ashby, Workday, SmartRecruiters), aggregator and remote APIs, and discovery search, then deterministically parses résumés and scores ATS relevance. A SQLite-backed tracker deduplicates saved/applied jobs and hides already-applied roles. Containerized with Docker; tracker lifecycle events streamed over Kafka.
+                        Java full-stack job-search & ATS-scoring platform — rebuilt from a Python/Streamlit prototype into a Spring Boot REST backend with a Next.js/React frontend. Concurrently ingests jobs via Java HttpClient + ExecutorService across sponsor ATS boards (Greenhouse, Lever, Ashby, Workday, SmartRecruiters), aggregator and discovery APIs, then deterministically parses résumés (Jackson, PDFBox, Apache POI) and scores ATS relevance. A SQLite-backed tracker dedupes saved/applied jobs and hides already-applied roles from future pulls.
                     </div>
                     <div class="exp-tags" style="margin-bottom: 1.5rem;">
                         <span class="tag tag-highlight">Java 17</span>
-                        <span class="tag tag-highlight">Spring Boot</span>
+                        <span class="tag tag-highlight">Spring Boot 3.3</span>
                         <span class="tag tag-highlight">Next.js / React</span>
-                        <span class="tag">REST APIs</span>
+                        <span class="tag">TypeScript</span>
                         <span class="tag">SQLite / JDBC</span>
+                        <span class="tag">Maven</span>
                         <span class="tag">Docker</span>
                         <span class="tag">Kafka</span>
                     </div>
                     <div>
-                        <a href="https://orumpaitsuryateja99.github.io/jobmatch-engine-java/" target="_blank" style="display: inline-flex; align-items: center; gap: 0.5rem; color: var(--accent-primary); font-weight: 600; font-size: 0.9rem; text-decoration: none;">
+                        <a href="https://jobmatch-frontend-6dyf.onrender.com" target="_blank" style="display: inline-flex; align-items: center; gap: 0.5rem; color: var(--accent-primary); font-weight: 600; font-size: 0.9rem; text-decoration: none;">
                             View Live App →
                         </a>
                         <a href="https://github.com/orumpaitsuryateja99/jobmatch-engine-java" target="_blank" style="display: inline-flex; align-items: center; gap: 0.5rem; color: var(--accent-primary); font-weight: 600; font-size: 0.9rem; text-decoration: none; margin-left: 1rem;">
