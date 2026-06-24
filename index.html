@@ -800,6 +800,7 @@
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="./Suryateja_Orumpati_Resume.pdf" target="_blank" rel="noopener">Resume</a></li>
             </ul>
         </div>
     </nav>
@@ -812,7 +813,7 @@
             <h1>Building <span class="highlight">full-stack apps</span> with AI baked in</h1>
             <p class="hero-subtitle">Full-Stack Software Engineer · AI Integration · MS CS @ UGA</p>
             <p class="hero-summary">
-                I build production full-stack systems — backend to UI — and wire LLMs and AI APIs straight into the pipeline. From a climate analytics platform powered by Google Gemini to an AI-search job-matching engine generating and scoring against live LLM prompts, I focus on shipping working AI-integrated products, not just demos.
+                MS Computer Science graduate of UGA who thrives on turning complex problems into clean, scalable systems. I ship production-grade full-stack applications, design RESTful APIs, and build intelligent automation pipelines — from a Next.js + Postgres booking platform to a Java/Spring Boot job-matching engine with AI baked into the pipeline.
             </p>
             <div class="hero-cta">
                 <a href="mailto:orumpatisuryateja@gmail.com" class="btn btn-primary">
@@ -956,19 +957,23 @@
                 <div class="exp-card">
                     <div class="exp-header">
                         <div class="exp-title-group">
-                            <h3>Web Development Intern</h3>
-                            <div class="exp-company">VIVAFIT</div>
+                            <h3>Software Engineering Intern</h3>
+                            <div class="exp-company">VIVA FIT</div>
                         </div>
                         <div class="exp-meta">
                             <div>Jul 2023 – Sep 2023</div>
-                            <div class="exp-location">Remote</div>
+                            <div class="exp-location">Remote, India</div>
                         </div>
                     </div>
                     <div class="exp-tags">
-                        <span class="tag tag-highlight">HTML/CSS/JS</span>
-                        <span class="tag">Google Calendar API</span>
-                        <span class="tag">OAuth</span>
-                        <span class="tag">Responsive Design</span>
+                        <span class="tag tag-highlight">Next.js 16</span>
+                        <span class="tag tag-highlight">TypeScript</span>
+                        <span class="tag tag-highlight">PostgreSQL</span>
+                        <span class="tag">Prisma</span>
+                        <span class="tag">Auth.js</span>
+                        <span class="tag">Zod</span>
+                        <span class="tag">Vercel</span>
+                        <span class="tag">Neon</span>
                     </div>
                     <div style="margin-bottom: 1rem;">
                         <a href="https://fitlife-studio-orpin.vercel.app" target="_blank" style="display: inline-flex; align-items: center; gap: 0.5rem; color: var(--accent-primary); font-weight: 600; font-size: 0.9rem; text-decoration: none; background: var(--accent-light); padding: 0.5rem 1rem; border-radius: 8px; transition: all 0.2s;">
@@ -980,9 +985,10 @@
                         </a>
                     </div>
                     <ul class="exp-details">
-                        <li>Built a <strong>responsive multi-page class scheduling web application</strong> using HTML, CSS, and JavaScript that consolidated the entire weekly class catalog into a single interface, eliminating multiple coordination touchpoints</li>
-                        <li>Integrated <strong>Google Calendar API</strong> into the booking workflow, replacing manual scheduling coordination with real-time class booking through external web services and handling user authorization</li>
-                        <li>Collaborated with the design team to ship production-ready UI components aligned with brand requirements, delivering the full interface on schedule for public release</li>
+                        <li>Built and deployed a <strong>full-stack fitness studio platform</strong> (Next.js 16, TypeScript, PostgreSQL, Prisma) with real-time class booking, role-based auth (Auth.js), and an admin CRUD panel</li>
+                        <li>Designed a <strong>concurrency-safe booking system</strong> using Serializable Postgres transactions and unique constraints to prevent seat overselling and double-booking</li>
+                        <li>Implemented server-rendered marketing pages and protected routes via Next.js middleware, with Zod-validated forms shared across client and server</li>
+                        <li>Migrated the legacy static HTML/CSS/JS site to a production-grade full-stack app, deployed on <strong>Vercel</strong> with Neon serverless Postgres and Prisma-managed schema migrations</li>
                     </ul>
                 </div>
             </div>
@@ -1053,15 +1059,19 @@
                 <!-- VIVAFIT -->
                 <div class="project-card">
                     <div class="project-header">
-                        <h3 class="project-title">FitLife Studio Scheduler</h3>
+                        <h3 class="project-title">FitLife Studio</h3>
                     </div>
                     <div class="project-description">
-                        A responsive multi-page class scheduling web application that consolidates the weekly class catalog. Integrated with Google Calendar API to replace manual scheduling with a real-time booking workflow.
+                        Full-stack fitness studio platform — migrated from a static HTML/CSS/JS site to Next.js + TypeScript with real-time class booking, role-based auth (Auth.js), and an admin CRUD panel. Concurrency-safe booking via Serializable Postgres transactions and unique constraints prevents seat overselling and double-booking; deployed on Vercel with Neon serverless Postgres and Prisma-managed schema.
                     </div>
                     <div class="exp-tags" style="margin-bottom: 1.5rem;">
-                        <span class="tag tag-highlight">HTML/CSS/JS</span>
-                        <span class="tag">Google Calendar API</span>
-                        <span class="tag">OAuth</span>
+                        <span class="tag tag-highlight">Next.js 16</span>
+                        <span class="tag tag-highlight">TypeScript</span>
+                        <span class="tag tag-highlight">PostgreSQL</span>
+                        <span class="tag">Prisma</span>
+                        <span class="tag">Auth.js</span>
+                        <span class="tag">Zod</span>
+                        <span class="tag">Vercel / Neon</span>
                     </div>
                     <div>
                         <a href="https://fitlife-studio-orpin.vercel.app" target="_blank" style="display: inline-flex; align-items: center; gap: 0.5rem; color: var(--accent-primary); font-weight: 600; font-size: 0.9rem; text-decoration: none;">
@@ -1085,7 +1095,7 @@
             </div>
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h4><span class="icon">🧠</span> AI Integration</h4>
+                    <h4><span class="icon">🧠</span> AI</h4>
                     <div class="skill-list">
                         <span class="skill-item">Generative AI</span>
                         <span class="skill-item">LLM Prompt Engineering</span>
@@ -1097,62 +1107,69 @@
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h4><span class="icon">⚙️</span> Backend & APIs</h4>
+                    <h4><span class="icon">⚙️</span> Web / Backend</h4>
                     <div class="skill-list">
-                        <span class="skill-item">Java 17</span>
                         <span class="skill-item">Spring Boot</span>
                         <span class="skill-item">Spring MVC REST</span>
-                        <span class="skill-item">Java HttpClient</span>
-                        <span class="skill-item">Python</span>
+                        <span class="skill-item">Next.js (App Router, RSC)</span>
+                        <span class="skill-item">React 19</span>
+                        <span class="skill-item">Server Actions</span>
                         <span class="skill-item">Flask</span>
+                        <span class="skill-item">Streamlit</span>
                         <span class="skill-item">REST APIs</span>
-                        <span class="skill-item">API Design</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h4><span class="icon">🎨</span> Frontend</h4>
-                    <div class="skill-list">
-                        <span class="skill-item">Next.js</span>
-                        <span class="skill-item">React</span>
-                        <span class="skill-item">TypeScript</span>
-                        <span class="skill-item">JavaScript</span>
-                        <span class="skill-item">Tailwind CSS</span>
-                        <span class="skill-item">HTML5</span>
-                        <span class="skill-item">CSS3</span>
+                        <span class="skill-item">Java HttpClient</span>
+                        <span class="skill-item">Tailwind CSS v4</span>
+                        <span class="skill-item">HTML5 / CSS3</span>
                         <span class="skill-item">Chart.js</span>
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h4><span class="icon">🔗</span> Integration & Data</h4>
+                    <h4><span class="icon">🗄️</span> Databases & Cloud</h4>
                     <div class="skill-list">
-                        <span class="skill-item">Google APIs</span>
-                        <span class="skill-item">OAuth 2.0</span>
-                        <span class="skill-item">Job-Board REST APIs</span>
-                        <span class="skill-item">NASA/NOAA/OpenWeather APIs</span>
-                        <span class="skill-item">CSV/PDF Export</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h4><span class="icon">🗄️</span> Database & Systems</h4>
-                    <div class="skill-list">
+                        <span class="skill-item">PostgreSQL</span>
+                        <span class="skill-item">Prisma ORM</span>
+                        <span class="skill-item">Neon (serverless Postgres)</span>
                         <span class="skill-item">SQLite</span>
                         <span class="skill-item">JDBC</span>
                         <span class="skill-item">SQL</span>
-                        <span class="skill-item">Database Schema Design</span>
-                        <span class="skill-item">Data Modeling</span>
-                        <span class="skill-item">System Architecture</span>
+                        <span class="skill-item">Google Cloud APIs</span>
+                        <span class="skill-item">AWS</span>
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h4><span class="icon">🛠️</span> Engineering Practices</h4>
+                    <h4><span class="icon">🔐</span> Auth & Validation</h4>
                     <div class="skill-list">
+                        <span class="skill-item">Auth.js (NextAuth)</span>
+                        <span class="skill-item">Zod</span>
+                        <span class="skill-item">OAuth</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4><span class="icon">💻</span> Languages</h4>
+                    <div class="skill-list">
+                        <span class="skill-item">Java</span>
+                        <span class="skill-item">Python</span>
+                        <span class="skill-item">TypeScript</span>
+                        <span class="skill-item">JavaScript</span>
+                        <span class="skill-item">SQL</span>
+                        <span class="skill-item">C++</span>
+                        <span class="skill-item">C</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4><span class="icon">🛠️</span> Developer Tools</h4>
+                    <div class="skill-list">
+                        <span class="skill-item">Git / GitHub</span>
+                        <span class="skill-item">Vercel</span>
                         <span class="skill-item">Docker</span>
                         <span class="skill-item">Kafka</span>
                         <span class="skill-item">Maven</span>
-                        <span class="skill-item">Git / GitHub</span>
-                        <span class="skill-item">Clean Code</span>
-                        <span class="skill-item">Testable Design</span>
-                        <span class="skill-item">Agile</span>
+                        <span class="skill-item">Jackson</span>
+                        <span class="skill-item">Apache PDFBox</span>
+                        <span class="skill-item">Apache POI</span>
+                        <span class="skill-item">VS Code</span>
+                        <span class="skill-item">Postman</span>
+                        <span class="skill-item">Agile / Scrum</span>
                     </div>
                 </div>
             </div>
@@ -1170,14 +1187,14 @@
                 <div class="edu-card">
                     <div class="edu-school">University of Georgia</div>
                     <div class="edu-degree">Master of Science in Computer Science</div>
-                    <div class="edu-date">Aug 2024 – Aug 2026</div>
+                    <div class="edu-date">Aug 2024 – May 2026</div>
                     <span class="edu-gpa">GPA: 3.85/4.0</span>
                 </div>
                 <div class="edu-card">
-                    <div class="edu-school">NIT Karnataka</div>
+                    <div class="edu-school">National Institute of Technology Karnataka (NITK)</div>
                     <div class="edu-degree">Bachelor of Technology in Information Technology</div>
-                    <div class="edu-date">Nov 2020 – Jun 2024</div>
-                    <span class="edu-gpa">GPA: 8.0/10.0</span>
+                    <div class="edu-date">Jul 2020 – Jun 2024</div>
+                    <span class="edu-gpa">CGPA: 3.21/4.0</span>
                 </div>
             </div>
         </div>
